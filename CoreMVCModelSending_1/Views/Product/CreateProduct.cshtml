@@ -1,0 +1,20 @@
+﻿@model GetProductRequestPageVM
+
+<form asp-controller="Product" asp-action="CreateProduct" method="post">
+    <div>
+        <input type="text" asp-for="Product.ProductName" placeholder="Lutfen urun ismi giriniz" class="form-control" />
+    </div>
+   <div>
+        <input type="number" asp-for="Product.UnitPrice" placeholder="Lutfen fiyat giriniz"  class="form-control"/>
+   </div>
+
+  
+
+    <button class="btn btn-primary">Ekle</button>
+
+
+    @* <input type="submit" /> => Post etmekle görevli bir buttondur...Eger button tag'i acıyorsanız tipini belirtmeye gerek yoktur otomatik olarak post etme görevine sahiptir... Eger bir buttonun post etmesini istemiyorsanız tipine button yazmanız yeterlidir *@
+
+
+
+</form>
